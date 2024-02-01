@@ -59,7 +59,7 @@ Before adding a new SSH key to the ssh-agent to manage your keys, you should hav
 2. Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace *id_ed25519* in the command with the name of your private key file.
 
     ```
-    $ ssh-add -K ~/.ssh/id_ed25519
+    $ ssh-add ~/.ssh/id_ed25519
     ```
 
 3. Add the SSH key to your account on CloudLab. For more information, see "Adding a new SSH key to your CloudLab account."
