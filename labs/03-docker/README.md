@@ -560,7 +560,7 @@ The last step is to write the command for running the application. We use the CM
 
 ```dockerfile
 # Setting the web server application as the default
-CMD ['nginx', '-g', 'daemon off']
+CMD ['nginx', '-g', 'daemon off;']
 ```
 
 With that, our ``Dockerfile`` is now ready. This is how it looks:
@@ -580,7 +580,7 @@ COPY index.html /var/www/html
 EXPOSE 80			
 
 # Setting the web server application as the default
-CMD ["nginx", "-g", "daemon off"]
+CMD ["nginx", "-g", "daemon off;"]
 ```
 
 #### Create static HTML file 
